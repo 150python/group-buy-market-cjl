@@ -1,0 +1,5 @@
+spring:
+  config:
+    name: group-buy-market-cjl-app
+  profiles:
+    active: dev
