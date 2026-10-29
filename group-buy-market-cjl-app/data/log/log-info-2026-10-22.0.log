@@ -1,0 +1,26 @@
+26-10-22.18:20:41.443 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_504 on PC-20260723LJNA with PID 25264 (started by Administrator in D:\java\group-buy-market\group-buy-market-cjl\group-buy-market-cjl-app)
+26-10-22.18:20:41.444 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+26-10-22.18:20:44.483 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 3.546 seconds (JVM running for 4.651)
+26-10-22.18:20:45.001 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:cjl requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"cjl"}
+26-10-22.18:20:45.044 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-22.18:20:45.397 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-22.18:20:45.453 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:cjl 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-10-22.18:20:45.453 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:cjl requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"cjl"}
+26-10-22.18:20:45.454 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:cjl requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"cjl"}
+26-10-22.18:20:45.455 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 请求参数:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"cjl"}
+26-10-22.18:20:45.460 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 返回结果:{"deductionPrice":0.00,"endTime":1733537980000,"goodsId":"9890001","goodsName":"《手写MyBatis：渐进式源码实践》","isEnable":false,"isVisible":false,"originalPrice":100.00,"startTime":1733537980000,"targetCount":1}
+26-10-22.18:20:45.473 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-22.18:20:45.478 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-10-22.18:41:24.554 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_504 on PC-20260723LJNA with PID 29128 (started by Administrator in D:\java\group-buy-market\group-buy-market-cjl\group-buy-market-cjl-app)
+26-10-22.18:41:24.555 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+26-10-22.18:41:26.878 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 2.918 seconds (JVM running for 3.953)
+26-10-22.18:41:27.353 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:cjl requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"cjl"}
+26-10-22.18:41:27.394 [pool-2-thread-1 ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-22.18:41:27.662 [pool-2-thread-1 ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-22.18:41:27.713 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:cjl 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-10-22.18:41:27.713 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:cjl requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"cjl"}
+26-10-22.18:41:27.713 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:cjl requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"cjl"}
+26-10-22.18:41:27.714 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 请求参数:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"cjl"}
+26-10-22.18:41:27.721 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 返回结果:{"deductionPrice":0.00,"endTime":1733537980000,"goodsId":"9890001","goodsName":"《手写MyBatis：渐进式源码实践》","isEnable":false,"isVisible":false,"originalPrice":100.00,"startTime":1733537980000,"targetCount":1}
+26-10-22.18:41:27.736 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-22.18:41:27.741 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
