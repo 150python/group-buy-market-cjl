@@ -9,7 +9,7 @@ import java.util.Date;
 
 /**
  * @author Administrator
- * @description
+ * @description 人群标签任务
  * @create 2026/10/29 20:17
  */
 @Data
