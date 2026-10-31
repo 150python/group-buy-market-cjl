@@ -36,3 +36,71 @@
 26-10-31.16:10:43.286 [main            ] INFO  ITagServiceTest        - Started ITagServiceTest in 7.042 seconds (JVM running for 8.41)
 26-10-31.16:10:43.554 [main            ] INFO  ITagServiceTest        - 测试结果:true
 26-10-31.16:10:43.557 [main            ] INFO  ITagServiceTest        - 测试结果:false
+26-10-31.17:59:25.168 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_504 on PC-20260723LJNA with PID 49268 (started by Administrator in D:\java\group-buy-market\group-buy-market-cjl\group-buy-market-cjl-app)
+26-10-31.17:59:25.170 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+26-10-31.17:59:26.360 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-31.17:59:26.370 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-31.17:59:26.452 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 0 Redis repository interfaces.
+26-10-31.17:59:28.413 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-31.17:59:28.779 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-31.17:59:28.798 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-31.17:59:31.848 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-31.17:59:31.927 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 7.372 seconds (JVM running for 8.622)
+26-10-31.17:59:32.351 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:cjl requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"cjl"}
+26-10-31.17:59:32.418 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-31.17:59:32.784 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-31.17:59:32.965 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-31.17:59:32.976 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-10-31.18:10:08.967 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_504 on PC-20260723LJNA with PID 53872 (started by Administrator in D:\java\group-buy-market\group-buy-market-cjl\group-buy-market-cjl-app)
+26-10-31.18:10:08.969 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+26-10-31.18:10:10.245 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-31.18:10:10.256 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-31.18:10:10.328 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 0 Redis repository interfaces.
+26-10-31.18:10:12.315 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-31.18:10:12.671 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-31.18:10:12.688 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-31.18:10:15.738 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-31.18:10:15.820 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 7.554 seconds (JVM running for 8.885)
+26-10-31.18:10:16.364 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:cjl requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"cjl"}
+26-10-31.18:10:16.432 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-31.18:10:16.783 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-31.18:10:16.846 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:cjl 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-10-31.18:10:16.846 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:cjl requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"cjl"}
+26-10-31.18:10:16.846 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:cjl requestParameter:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"cjl"}
+26-10-31.18:10:16.847 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 请求参数:{"channel":"c01","goodsId":"9890001","source":"s01","userId":"cjl"}
+26-10-31.18:10:16.853 [main            ] INFO  IIndexGroupBuyMarketServiceTest - 返回结果:{"deductionPrice":90.00,"endTime":1733537980000,"goodsId":"9890001","goodsName":"《手写MyBatis：渐进式源码实践》","isEnable":false,"isVisible":false,"originalPrice":100.00,"startTime":1733537980000,"targetCount":1}
+26-10-31.18:10:16.891 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-31.18:10:16.908 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-10-31.18:11:09.495 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_504 on PC-20260723LJNA with PID 51704 (started by Administrator in D:\java\group-buy-market\group-buy-market-cjl\group-buy-market-cjl-app)
+26-10-31.18:11:09.496 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+26-10-31.18:11:10.709 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-31.18:11:10.719 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-31.18:11:10.807 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47 ms. Found 0 Redis repository interfaces.
+26-10-31.18:11:12.971 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-31.18:11:13.392 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-31.18:11:13.413 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-31.18:11:16.657 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-31.18:11:16.746 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 7.909 seconds (JVM running for 9.192)
+26-10-31.18:11:17.199 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:cjl requestParameter:{"channel":"c01","goodsId":"9890002","source":"s01","userId":"cjl"}
+26-10-31.18:11:17.237 [pool-2-thread-1 ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-31.18:11:17.611 [pool-2-thread-1 ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-31.18:11:17.714 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-31.18:11:17.718 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-10-31.18:13:33.323 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Starting IIndexGroupBuyMarketServiceTest using Java 1.8.0_504 on PC-20260723LJNA with PID 53352 (started by Administrator in D:\java\group-buy-market\group-buy-market-cjl\group-buy-market-cjl-app)
+26-10-31.18:13:33.324 [main            ] INFO  IIndexGroupBuyMarketServiceTest - The following 1 profile is active: "dev"
+26-10-31.18:13:34.462 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-10-31.18:13:34.468 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-10-31.18:13:34.521 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 0 Redis repository interfaces.
+26-10-31.18:13:36.340 [main            ] INFO  Version                - Redisson 3.26.0
+26-10-31.18:13:36.728 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-31.18:13:36.758 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-10-31.18:13:39.695 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-10-31.18:13:39.772 [main            ] INFO  IIndexGroupBuyMarketServiceTest - Started IIndexGroupBuyMarketServiceTest in 7.079 seconds (JVM running for 8.339)
+26-10-31.18:13:40.267 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:cjl requestParameter:{"channel":"c01","goodsId":"9890002","source":"s01","userId":"cjl"}
+26-10-31.18:13:40.308 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-10-31.18:13:40.655 [pool-2-thread-2 ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-10-31.18:13:40.709 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:cjl 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-10-31.18:13:40.710 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:cjl requestParameter:{"channel":"c01","goodsId":"9890002","source":"s01","userId":"cjl"}
+26-10-31.18:13:40.710 [main            ] INFO  ErrorNode              - 拼团商品查询试算服务-ErrorNode userId:cjl requestParameter:{"channel":"c01","goodsId":"9890002","source":"s01","userId":"cjl"}
+26-10-31.18:13:40.755 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-10-31.18:13:40.760 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
