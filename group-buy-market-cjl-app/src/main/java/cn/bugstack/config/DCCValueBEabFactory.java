@@ -101,8 +101,8 @@ public class DCCValueBEabFactory implements BeanPostProcessor {
             String defaultValue = split.length == 2 ? split[1] : null;
 
             String setValue = defaultValue;
-            if(!StringUtils.isNotBlank(defaultValue)){
-                throw new RuntimeException("...");
+            if(StringUtils.isBlank(defaultValue)){
+                throw new RuntimeException("dcc config error " + key + " is not null - 请配置默认值！");
             }
 
             try{
