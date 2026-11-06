@@ -1,6 +1,9 @@
 package cn.bugstack.domain.trade.adapter.repository;
 
-import java.net.InterfaceAddress;
+import cn.bugstack.domain.trade.model.aggregate.GroupBuyOrderAggregate;
+import cn.bugstack.domain.trade.model.entity.MarketPayOrderEntity;
+import cn.bugstack.domain.trade.model.valobj.GroupBuyProgressVO;
+
 
 /**
  * @author Administrator
@@ -9,4 +12,9 @@ import java.net.InterfaceAddress;
  */
 public interface ITradeRepository {
 
+    MarketPayOrderEntity queryNoPayMarketPayOrderByOutTradeNo(String userId, String outTradeNo);
+
+    GroupBuyProgressVO queryGroupBuyProgress(String teamId);
+
+    MarketPayOrderEntity lockMarketPayOrder(GroupBuyOrderAggregate groupBuyOrderAggregate);
 }
