@@ -46,6 +46,8 @@ public class DefaultActivityStrategyFactory {
 
     private BigDecimal deductionPrice;
 
+    private BigDecimal payPrice;
+
     //活动可见性
         private boolean visible;
         //活动能否参与

@@ -1,0 +1,19 @@
+package cn.bugstack.domain.trade.model.entity;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+/**
+ * @author Administrator
+ * @description
+ * @create 2026/11/8 18:00
+ */
+@Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+public class TradeRuleFilterBackEntity {
+    private Integer userTakeOrderCount;
+}
