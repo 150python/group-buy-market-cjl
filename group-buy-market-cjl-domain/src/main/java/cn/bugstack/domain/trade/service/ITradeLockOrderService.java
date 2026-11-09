@@ -11,7 +11,7 @@ import cn.bugstack.domain.trade.model.valobj.GroupBuyProgressVO;
  * @description
  * @create 2026/11/5 19:57
  */
-public interface ITradeOrderService {
+public interface ITradeLockOrderService {
 
     MarketPayOrderEntity  queryNoPayMarketPayOrderByOutTradeNo(String userId, String outTradeNo);
 
