@@ -6,6 +6,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Date;
+
 /**
  * @author Administrator
  * @description 拼团的组队信息
@@ -27,4 +29,8 @@ public class GroupBuyTeamEntity {
     private Integer lockCount;
 
     private GroupBuyOrderEnumVO status;
+
+    private Date validStartTime;
+
+    private Date validEndTime;
 }

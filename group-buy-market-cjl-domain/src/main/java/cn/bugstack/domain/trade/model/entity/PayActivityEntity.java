@@ -27,5 +27,7 @@ public class PayActivityEntity {
 
     private Date endTime;
 
+    private Integer validTime;
+
     private Integer targetCount;
 }

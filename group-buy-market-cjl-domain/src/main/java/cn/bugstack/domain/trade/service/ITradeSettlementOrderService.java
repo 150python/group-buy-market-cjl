@@ -10,5 +10,5 @@ import cn.bugstack.domain.trade.model.entity.TradePaySuccessEntity;
  * @create 2026/11/9 20:18
  */
 public interface ITradeSettlementOrderService {
-    TradePaySettlementEntity settlementMarketPayOrder(TradePaySuccessEntity  tradePaySuccessEntity);
+    TradePaySettlementEntity settlementMarketPayOrder(TradePaySuccessEntity  tradePaySuccessEntity) throws Exception;
 }

@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Date;
+
 /**
  * @author Administrator
  * @description
@@ -15,6 +17,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class TradePaySuccessEntity {
+
     private String source;
 
     private String channel;
@@ -22,4 +25,6 @@ public class TradePaySuccessEntity {
     private String userId;
 
     private String outTradeNo;
+
+    private Date outTradeTime;
 }
