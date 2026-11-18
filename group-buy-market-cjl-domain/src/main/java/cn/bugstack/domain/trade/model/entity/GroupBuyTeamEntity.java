@@ -33,4 +33,6 @@ public class GroupBuyTeamEntity {
     private Date validStartTime;
 
     private Date validEndTime;
+
+    private String notifyUrl;
 }

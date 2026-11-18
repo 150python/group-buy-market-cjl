@@ -50,6 +50,8 @@ public class GroupBuyOrder {
     //拼团结束时间
     private Date validEndTime;
 
+    //回调通知地址
+    private String notifyUrl;
 
     /** 创建时间 */
     private Date createTime;
