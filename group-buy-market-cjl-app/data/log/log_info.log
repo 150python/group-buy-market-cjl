@@ -1,154 +1,311 @@
-26-11-18.15:13:23.085 [main            ] INFO  MarketTradeControllerTest - Starting MarketTradeControllerTest using Java 1.8.0_504 on PC-20260723LJNA with PID 41940 (started by Administrator in D:\java\group-buy-market\group-buy-market-cjl\group-buy-market-cjl-app)
-26-11-18.15:13:23.086 [main            ] INFO  MarketTradeControllerTest - The following 1 profile is active: "dev"
-26-11-18.15:13:24.330 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-26-11-18.15:13:24.336 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-26-11-18.15:13:24.435 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 65 ms. Found 0 Redis repository interfaces.
-26-11-18.15:13:25.013 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [cn.bugstack.config.RedisClientConfig$$EnhancerBySpringCGLIB$$92e93a7f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-26-11-18.15:13:25.558 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-cn.bugstack.config.RedisClientConfigProperties' of type [cn.bugstack.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-26-11-18.15:13:25.886 [main            ] INFO  Version                - Redisson 3.26.0
-26-11-18.15:13:26.252 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-26-11-18.15:13:26.271 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-26-11-18.15:13:26.346 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-26-11-18.15:13:31.040 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-26-11-18.15:13:31.148 [main            ] INFO  MarketTradeControllerTest - Started MarketTradeControllerTest in 8.86 seconds (JVM running for 10.642)
-26-11-18.15:13:31.746 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg01 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/test/group_buy_notify","outTradeNo":"409819107024","source":"s01","userId":"xfg01"}
-26-11-18.15:13:31.777 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-26-11-18.15:13:32.058 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-26-11-18.15:13:32.120 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xfg01 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg01"}
-26-11-18.15:13:32.160 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg01 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
-26-11-18.15:13:32.160 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg01 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg01"}
-26-11-18.15:13:32.172 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xfg01 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg01"}
-26-11-18.15:13:32.179 [main            ] INFO  ActivityUsabilityRuleFilter - 交易规则过滤-活动的可用性校验xfg01 activityId:100123
-26-11-18.15:13:32.188 [main            ] INFO  UserTakeLimitRuleFilter - 交易规则过滤-用户参与次数校验xfg01 activityId:100123
-26-11-18.15:13:32.265 [main            ] INFO  MarketTradeController  - 交易锁单记录(新):xfg01 marketPayOrderEntity:{"deductionPrice":10.00,"orderId":"738499264032","tradeOrderStatusEnumVO":"CREATE"}
-26-11-18.15:13:32.275 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/test/group_buy_notify","outTradeNo":"409819107024","source":"s01","userId":"xfg01"} res:{"code":"0000","data":{"deductionPrice":10.00,"orderId":"738499264032","tradeOrderStatus":0},"info":"成功"}
-26-11-18.15:13:32.323 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-26-11-18.15:13:32.356 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-26-11-18.15:14:18.879 [main            ] INFO  MarketTradeControllerTest - Starting MarketTradeControllerTest using Java 1.8.0_504 on PC-20260723LJNA with PID 7244 (started by Administrator in D:\java\group-buy-market\group-buy-market-cjl\group-buy-market-cjl-app)
-26-11-18.15:14:18.881 [main            ] INFO  MarketTradeControllerTest - The following 1 profile is active: "dev"
-26-11-18.15:14:20.188 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-26-11-18.15:14:20.194 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-26-11-18.15:14:20.268 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 49 ms. Found 0 Redis repository interfaces.
-26-11-18.15:14:20.864 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [cn.bugstack.config.RedisClientConfig$$EnhancerBySpringCGLIB$$d76e2bd0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-26-11-18.15:14:21.318 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-cn.bugstack.config.RedisClientConfigProperties' of type [cn.bugstack.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-26-11-18.15:14:21.627 [main            ] INFO  Version                - Redisson 3.26.0
-26-11-18.15:14:21.984 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-26-11-18.15:14:22.001 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-26-11-18.15:14:22.069 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-26-11-18.15:14:27.013 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-26-11-18.15:14:27.138 [main            ] INFO  MarketTradeControllerTest - Started MarketTradeControllerTest in 8.948 seconds (JVM running for 10.336)
-26-11-18.15:14:27.660 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg02 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/test/group_buy_notify","outTradeNo":"455018579814","source":"s01","teamId":"96285035","userId":"xfg02"}
-26-11-18.15:14:27.734 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-26-11-18.15:14:28.103 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-26-11-18.15:14:28.152 [main            ] INFO  TradeLockOrderService  - 拼团交易-查询拼团进度:96285035
-26-11-18.15:14:28.162 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xfg02 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg02"}
-26-11-18.15:14:28.189 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg02 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
-26-11-18.15:14:28.190 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg02 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg02"}
-26-11-18.15:14:28.203 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xfg02 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg02"}
-26-11-18.15:14:28.211 [main            ] INFO  ActivityUsabilityRuleFilter - 交易规则过滤-活动的可用性校验xfg02 activityId:100123
-26-11-18.15:14:28.217 [main            ] INFO  UserTakeLimitRuleFilter - 交易规则过滤-用户参与次数校验xfg02 activityId:100123
-26-11-18.15:14:28.304 [main            ] INFO  MarketTradeController  - 交易锁单记录(新):xfg02 marketPayOrderEntity:{"deductionPrice":10.00,"orderId":"141841405718","tradeOrderStatusEnumVO":"CREATE"}
-26-11-18.15:14:28.312 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/test/group_buy_notify","outTradeNo":"455018579814","source":"s01","teamId":"96285035","userId":"xfg02"} res:{"code":"0000","data":{"deductionPrice":10.00,"orderId":"141841405718","tradeOrderStatus":0},"info":"成功"}
-26-11-18.15:14:28.348 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-26-11-18.15:14:28.377 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-26-11-18.15:15:15.440 [main            ] INFO  MarketTradeControllerTest - Starting MarketTradeControllerTest using Java 1.8.0_504 on PC-20260723LJNA with PID 57208 (started by Administrator in D:\java\group-buy-market\group-buy-market-cjl\group-buy-market-cjl-app)
-26-11-18.15:15:15.442 [main            ] INFO  MarketTradeControllerTest - The following 1 profile is active: "dev"
-26-11-18.15:15:16.609 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-26-11-18.15:15:16.614 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-26-11-18.15:15:16.693 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 54 ms. Found 0 Redis repository interfaces.
-26-11-18.15:15:17.255 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [cn.bugstack.config.RedisClientConfig$$EnhancerBySpringCGLIB$$7804cd7a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-26-11-18.15:15:17.798 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-cn.bugstack.config.RedisClientConfigProperties' of type [cn.bugstack.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-26-11-18.15:15:18.128 [main            ] INFO  Version                - Redisson 3.26.0
-26-11-18.15:15:18.513 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-26-11-18.15:15:18.538 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-26-11-18.15:15:18.616 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-26-11-18.15:15:23.044 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-26-11-18.15:15:23.193 [main            ] INFO  MarketTradeControllerTest - Started MarketTradeControllerTest in 8.439 seconds (JVM running for 9.716)
-26-11-18.15:15:23.738 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg03 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/test/group_buy_notify","outTradeNo":"824739832993","source":"s01","teamId":"96285035","userId":"xfg03"}
-26-11-18.15:15:23.776 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-26-11-18.15:15:24.136 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-26-11-18.15:15:24.180 [main            ] INFO  TradeLockOrderService  - 拼团交易-查询拼团进度:96285035
-26-11-18.15:15:24.189 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xfg03 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg03"}
-26-11-18.15:15:24.211 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg03 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
-26-11-18.15:15:24.211 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg03 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg03"}
-26-11-18.15:15:24.224 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xfg03 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg03"}
-26-11-18.15:15:24.231 [main            ] INFO  ActivityUsabilityRuleFilter - 交易规则过滤-活动的可用性校验xfg03 activityId:100123
-26-11-18.15:15:24.239 [main            ] INFO  UserTakeLimitRuleFilter - 交易规则过滤-用户参与次数校验xfg03 activityId:100123
-26-11-18.15:15:24.300 [main            ] INFO  MarketTradeController  - 交易锁单记录(新):xfg03 marketPayOrderEntity:{"deductionPrice":10.00,"orderId":"931901765339","tradeOrderStatusEnumVO":"CREATE"}
-26-11-18.15:15:24.310 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/test/group_buy_notify","outTradeNo":"824739832993","source":"s01","teamId":"96285035","userId":"xfg03"} res:{"code":"0000","data":{"deductionPrice":10.00,"orderId":"931901765339","tradeOrderStatus":0},"info":"成功"}
-26-11-18.15:15:24.341 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-26-11-18.15:15:24.367 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-26-11-18.15:16:36.521 [main            ] INFO  TradeSettlementOrderServiceTest - Starting TradeSettlementOrderServiceTest using Java 1.8.0_504 on PC-20260723LJNA with PID 56484 (started by Administrator in D:\java\group-buy-market\group-buy-market-cjl\group-buy-market-cjl-app)
-26-11-18.15:16:36.523 [main            ] INFO  TradeSettlementOrderServiceTest - The following 1 profile is active: "dev"
-26-11-18.15:16:37.894 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-26-11-18.15:16:37.900 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-26-11-18.15:16:37.973 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51 ms. Found 0 Redis repository interfaces.
-26-11-18.15:16:38.661 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [cn.bugstack.config.RedisClientConfig$$EnhancerBySpringCGLIB$$42a51c8f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-26-11-18.15:16:39.198 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-cn.bugstack.config.RedisClientConfigProperties' of type [cn.bugstack.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-26-11-18.15:16:39.494 [main            ] INFO  Version                - Redisson 3.26.0
-26-11-18.15:16:39.878 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-26-11-18.15:16:39.897 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-26-11-18.15:16:39.967 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-26-11-18.15:16:43.845 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-26-11-18.15:16:43.947 [main            ] INFO  TradeSettlementOrderServiceTest - Started TradeSettlementOrderServiceTest in 8.105 seconds (JVM running for 9.339)
-26-11-18.15:16:44.268 [main            ] INFO  TradeSettlementOrderService - 拼团交易-支付订单结算:xfg01 outTradeNo:409819107024
-26-11-18.15:16:44.271 [main            ] INFO  SCRuleFilter           - 结算规则过滤-渠道黑名单校验xfg01 outTradeNo:409819107024
-26-11-18.15:16:44.283 [main            ] INFO  OutTradeNoRuleFilter   - 结算规则过滤-外部单号校验xfg01 outTradeNo:409819107024
-26-11-18.15:16:44.315 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-26-11-18.15:16:44.556 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-26-11-18.15:16:44.599 [main            ] INFO  SettableRuleFilter     - 结算规则过滤-有效时间校验xfg01 outTradeNo:409819107024
-26-11-18.15:16:44.603 [main            ] INFO  EndRuleFilter          - 结算规则过滤-结束节点xfg01 outTradeNo:409819107024
-26-11-18.15:16:44.875 [main            ] INFO  TradeSettlementOrderServiceTest - 请求参数:{"channel":"c01","outTradeNo":"409819107024","outTradeTime":"2026-11-18 15:16:44.268","source":"s01","userId":"xfg01"}
-26-11-18.15:16:44.877 [main            ] INFO  TradeSettlementOrderServiceTest - 测试结果:{"activityId":100123,"channel":"c01","outTradeNo":"409819107024","source":"s01","teamId":"96285035","userId":"xfg01"}
-26-11-18.15:16:44.895 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-26-11-18.15:16:44.909 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-26-11-18.15:17:49.217 [main            ] INFO  TradeSettlementOrderServiceTest - Starting TradeSettlementOrderServiceTest using Java 1.8.0_504 on PC-20260723LJNA with PID 57248 (started by Administrator in D:\java\group-buy-market\group-buy-market-cjl\group-buy-market-cjl-app)
-26-11-18.15:17:49.219 [main            ] INFO  TradeSettlementOrderServiceTest - The following 1 profile is active: "dev"
-26-11-18.15:17:50.444 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-26-11-18.15:17:50.450 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-26-11-18.15:17:50.536 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 53 ms. Found 0 Redis repository interfaces.
-26-11-18.15:17:51.101 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [cn.bugstack.config.RedisClientConfig$$EnhancerBySpringCGLIB$$9446adc5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-26-11-18.15:17:51.577 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-cn.bugstack.config.RedisClientConfigProperties' of type [cn.bugstack.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-26-11-18.15:17:51.896 [main            ] INFO  Version                - Redisson 3.26.0
-26-11-18.15:17:52.259 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-26-11-18.15:17:52.277 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-26-11-18.15:17:52.336 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-26-11-18.15:17:56.712 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-26-11-18.15:17:56.882 [main            ] INFO  TradeSettlementOrderServiceTest - Started TradeSettlementOrderServiceTest in 8.359 seconds (JVM running for 9.697)
-26-11-18.15:17:57.130 [main            ] INFO  TradeSettlementOrderService - 拼团交易-支付订单结算:xfg02 outTradeNo:455018579814
-26-11-18.15:17:57.132 [main            ] INFO  SCRuleFilter           - 结算规则过滤-渠道黑名单校验xfg02 outTradeNo:455018579814
-26-11-18.15:17:57.141 [main            ] INFO  OutTradeNoRuleFilter   - 结算规则过滤-外部单号校验xfg02 outTradeNo:455018579814
-26-11-18.15:17:57.164 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-26-11-18.15:17:57.437 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-26-11-18.15:17:57.497 [main            ] INFO  SettableRuleFilter     - 结算规则过滤-有效时间校验xfg02 outTradeNo:455018579814
-26-11-18.15:17:57.504 [main            ] INFO  EndRuleFilter          - 结算规则过滤-结束节点xfg02 outTradeNo:455018579814
-26-11-18.15:17:57.801 [main            ] INFO  TradeSettlementOrderServiceTest - 请求参数:{"channel":"c01","outTradeNo":"455018579814","outTradeTime":"2026-11-18 15:17:57.13","source":"s01","userId":"xfg02"}
-26-11-18.15:17:57.804 [main            ] INFO  TradeSettlementOrderServiceTest - 测试结果:{"activityId":100123,"channel":"c01","outTradeNo":"455018579814","source":"s01","teamId":"96285035","userId":"xfg02"}
-26-11-18.15:17:57.822 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-26-11-18.15:17:57.858 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-26-11-18.15:18:43.400 [main            ] INFO  TradeSettlementOrderServiceTest - Starting TradeSettlementOrderServiceTest using Java 1.8.0_504 on PC-20260723LJNA with PID 13576 (started by Administrator in D:\java\group-buy-market\group-buy-market-cjl\group-buy-market-cjl-app)
-26-11-18.15:18:43.401 [main            ] INFO  TradeSettlementOrderServiceTest - The following 1 profile is active: "dev"
-26-11-18.15:18:44.592 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-26-11-18.15:18:44.600 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-26-11-18.15:18:44.677 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 53 ms. Found 0 Redis repository interfaces.
-26-11-18.15:18:45.230 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [cn.bugstack.config.RedisClientConfig$$EnhancerBySpringCGLIB$$9446adc5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-26-11-18.15:18:45.700 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-cn.bugstack.config.RedisClientConfigProperties' of type [cn.bugstack.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-26-11-18.15:18:46.017 [main            ] INFO  Version                - Redisson 3.26.0
-26-11-18.15:18:46.396 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-26-11-18.15:18:46.412 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-26-11-18.15:18:46.472 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-26-11-18.15:18:50.701 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-26-11-18.15:18:50.802 [main            ] INFO  TradeSettlementOrderServiceTest - Started TradeSettlementOrderServiceTest in 8.041 seconds (JVM running for 9.208)
-26-11-18.15:18:51.128 [main            ] INFO  TradeSettlementOrderService - 拼团交易-支付订单结算:xfg03 outTradeNo:824739832993
-26-11-18.15:18:51.130 [main            ] INFO  SCRuleFilter           - 结算规则过滤-渠道黑名单校验xfg03 outTradeNo:824739832993
-26-11-18.15:18:51.137 [main            ] INFO  OutTradeNoRuleFilter   - 结算规则过滤-外部单号校验xfg03 outTradeNo:824739832993
-26-11-18.15:18:51.159 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-26-11-18.15:18:51.442 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-26-11-18.15:18:51.500 [main            ] INFO  SettableRuleFilter     - 结算规则过滤-有效时间校验xfg03 outTradeNo:824739832993
-26-11-18.15:18:51.508 [main            ] INFO  EndRuleFilter          - 结算规则过滤-结束节点xfg03 outTradeNo:824739832993
-26-11-18.15:18:51.798 [main            ] INFO  TradeSettlementOrderService - 拼团交易-执行结算通知回调，指定 teamId:96285035
-26-11-18.15:18:52.039 [main            ] INFO  TradeSettlementOrderService - 回调通知拼团完结 result:{"retryCount":0,"successCount":0,"waitCount":1,"errorCount":0}
-26-11-18.15:18:52.057 [main            ] INFO  TradeSettlementOrderServiceTest - 请求参数:{"channel":"c01","outTradeNo":"824739832993","outTradeTime":"2026-11-18 15:18:51.128","source":"s01","userId":"xfg03"}
-26-11-18.15:18:52.061 [main            ] INFO  TradeSettlementOrderServiceTest - 测试结果:{"activityId":100123,"channel":"c01","outTradeNo":"824739832993","source":"s01","teamId":"96285035","userId":"xfg03"}
-26-11-18.15:18:52.086 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-26-11-18.15:18:52.111 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-11-19.20:42:50.708 [main            ] INFO  MarketTradeControllerTest - Starting MarketTradeControllerTest using Java 1.8.0_504 on PC-20260723LJNA with PID 8016 (started by Administrator in D:\java\group-buy-market\group-buy-market-cjl\group-buy-market-cjl-app)
+26-11-19.20:42:50.709 [main            ] INFO  MarketTradeControllerTest - The following 1 profile is active: "dev"
+26-11-19.20:42:52.027 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-11-19.20:42:52.033 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-11-19.20:42:52.101 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 44 ms. Found 0 Redis repository interfaces.
+26-11-19.20:42:52.559 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [cn.bugstack.config.RedisClientConfig$$EnhancerBySpringCGLIB$$7804cd7a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-11-19.20:42:53.070 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-cn.bugstack.config.RedisClientConfigProperties' of type [cn.bugstack.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-11-19.20:42:53.351 [main            ] INFO  Version                - Redisson 3.26.0
+26-11-19.20:42:53.705 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-11-19.20:42:53.719 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-11-19.20:42:53.776 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-11-19.20:42:57.137 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-11-19.20:42:57.219 [main            ] INFO  MarketTradeControllerTest - Started MarketTradeControllerTest in 7.114 seconds (JVM running for 8.464)
+26-11-19.20:42:57.666 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg01 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"960039766848","source":"s01","userId":"xfg01"}
+26-11-19.20:42:57.694 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-11-19.20:42:57.932 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-11-19.20:42:57.975 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xfg01 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg01"}
+26-11-19.20:42:57.998 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg01 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-11-19.20:42:57.998 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg01 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg01"}
+26-11-19.20:42:58.008 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xfg01 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg01"}
+26-11-19.20:42:58.014 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"960039766848","source":"s01","userId":"xfg01"} res:{"code":"E0007","info":"拼团人群限定，不可参与"}
+26-11-19.20:42:58.014 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg02 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"012429288057","source":"s01","userId":"xfg02"}
+26-11-19.20:42:58.016 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xfg02 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg02"}
+26-11-19.20:42:58.022 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg02 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-11-19.20:42:58.023 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg02 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg02"}
+26-11-19.20:42:58.026 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xfg02 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg02"}
+26-11-19.20:42:58.026 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"012429288057","source":"s01","userId":"xfg02"} res:{"code":"E0007","info":"拼团人群限定，不可参与"}
+26-11-19.20:42:58.026 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg03 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"310369924577","source":"s01","userId":"xfg03"}
+26-11-19.20:42:58.029 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xfg03 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg03"}
+26-11-19.20:42:58.039 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg03 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-11-19.20:42:58.039 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg03 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg03"}
+26-11-19.20:42:58.042 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xfg03 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg03"}
+26-11-19.20:42:58.043 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"310369924577","source":"s01","userId":"xfg03"} res:{"code":"E0007","info":"拼团人群限定，不可参与"}
+26-11-19.20:42:58.043 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg04 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"601521806831","source":"s01","userId":"xfg04"}
+26-11-19.20:42:58.044 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xfg04 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg04"}
+26-11-19.20:42:58.051 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg04 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-11-19.20:42:58.051 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg04 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg04"}
+26-11-19.20:42:58.054 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xfg04 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg04"}
+26-11-19.20:42:58.055 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"601521806831","source":"s01","userId":"xfg04"} res:{"code":"E0007","info":"拼团人群限定，不可参与"}
+26-11-19.20:42:58.055 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg05 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"185315395260","source":"s01","userId":"xfg05"}
+26-11-19.20:42:58.057 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xfg05 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg05"}
+26-11-19.20:42:58.063 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg05 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-11-19.20:42:58.063 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg05 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg05"}
+26-11-19.20:42:58.067 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xfg05 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg05"}
+26-11-19.20:42:58.068 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"185315395260","source":"s01","userId":"xfg05"} res:{"code":"E0007","info":"拼团人群限定，不可参与"}
+26-11-19.20:42:58.068 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg06 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"634328845637","source":"s01","userId":"xfg06"}
+26-11-19.20:42:58.071 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xfg06 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg06"}
+26-11-19.20:42:58.077 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg06 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-11-19.20:42:58.077 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg06 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg06"}
+26-11-19.20:42:58.081 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xfg06 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg06"}
+26-11-19.20:42:58.082 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"634328845637","source":"s01","userId":"xfg06"} res:{"code":"E0007","info":"拼团人群限定，不可参与"}
+26-11-19.20:42:58.082 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg07 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"748521326248","source":"s01","userId":"xfg07"}
+26-11-19.20:42:58.084 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xfg07 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg07"}
+26-11-19.20:42:58.089 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg07 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-11-19.20:42:58.090 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg07 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg07"}
+26-11-19.20:42:58.094 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xfg07 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg07"}
+26-11-19.20:42:58.094 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"748521326248","source":"s01","userId":"xfg07"} res:{"code":"E0007","info":"拼团人群限定，不可参与"}
+26-11-19.20:42:58.094 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg08 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"695996001932","source":"s01","userId":"xfg08"}
+26-11-19.20:42:58.096 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xfg08 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg08"}
+26-11-19.20:42:58.102 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg08 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-11-19.20:42:58.102 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg08 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg08"}
+26-11-19.20:42:58.105 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xfg08 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg08"}
+26-11-19.20:42:58.105 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"695996001932","source":"s01","userId":"xfg08"} res:{"code":"E0007","info":"拼团人群限定，不可参与"}
+26-11-19.20:42:58.105 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg09 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"422120095266","source":"s01","userId":"xfg09"}
+26-11-19.20:42:58.108 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xfg09 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg09"}
+26-11-19.20:42:58.113 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg09 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-11-19.20:42:58.114 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg09 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg09"}
+26-11-19.20:42:58.116 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xfg09 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg09"}
+26-11-19.20:42:58.116 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"422120095266","source":"s01","userId":"xfg09"} res:{"code":"E0007","info":"拼团人群限定，不可参与"}
+26-11-19.20:42:58.145 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-11-19.20:42:58.167 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-11-19.20:51:16.035 [main            ] INFO  MarketTradeControllerTest - Starting MarketTradeControllerTest using Java 1.8.0_504 on PC-20260723LJNA with PID 38996 (started by Administrator in D:\java\group-buy-market\group-buy-market-cjl\group-buy-market-cjl-app)
+26-11-19.20:51:16.037 [main            ] INFO  MarketTradeControllerTest - The following 1 profile is active: "dev"
+26-11-19.20:51:17.246 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-11-19.20:51:17.253 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-11-19.20:51:17.331 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51 ms. Found 0 Redis repository interfaces.
+26-11-19.20:51:17.821 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [cn.bugstack.config.RedisClientConfig$$EnhancerBySpringCGLIB$$ad05e511] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-11-19.20:51:18.242 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-cn.bugstack.config.RedisClientConfigProperties' of type [cn.bugstack.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-11-19.20:51:18.527 [main            ] INFO  Version                - Redisson 3.26.0
+26-11-19.20:51:18.878 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-11-19.20:51:18.893 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-11-19.20:51:18.950 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-11-19.20:51:23.209 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-11-19.20:51:23.288 [main            ] INFO  MarketTradeControllerTest - Started MarketTradeControllerTest in 7.878 seconds (JVM running for 8.969)
+26-11-19.20:51:23.712 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg01 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"427584303519","source":"s01","userId":"xfg01"}
+26-11-19.20:51:23.741 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-11-19.20:51:23.997 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-11-19.20:51:24.040 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xfg01 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg01"}
+26-11-19.20:51:24.062 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg01 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-11-19.20:51:24.062 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg01 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg01"}
+26-11-19.20:51:24.071 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xfg01 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg01"}
+26-11-19.20:51:24.076 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"427584303519","source":"s01","userId":"xfg01"} res:{"code":"E0007","info":"拼团人群限定，不可参与"}
+26-11-19.20:51:24.076 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg02 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"201974249071","source":"s01","userId":"xfg02"}
+26-11-19.20:51:24.078 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xfg02 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg02"}
+26-11-19.20:51:24.090 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg02 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-11-19.20:51:24.090 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg02 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg02"}
+26-11-19.20:51:24.093 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xfg02 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg02"}
+26-11-19.20:51:24.093 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"201974249071","source":"s01","userId":"xfg02"} res:{"code":"E0007","info":"拼团人群限定，不可参与"}
+26-11-19.20:51:24.093 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg03 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"787199991991","source":"s01","userId":"xfg03"}
+26-11-19.20:51:24.096 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xfg03 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg03"}
+26-11-19.20:51:24.103 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg03 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-11-19.20:51:24.103 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg03 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg03"}
+26-11-19.20:51:24.106 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xfg03 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg03"}
+26-11-19.20:51:24.106 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"787199991991","source":"s01","userId":"xfg03"} res:{"code":"E0007","info":"拼团人群限定，不可参与"}
+26-11-19.20:51:24.107 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg04 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"156984638424","source":"s01","userId":"xfg04"}
+26-11-19.20:51:24.109 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xfg04 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg04"}
+26-11-19.20:51:24.117 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg04 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-11-19.20:51:24.117 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg04 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg04"}
+26-11-19.20:51:24.121 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xfg04 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg04"}
+26-11-19.20:51:24.121 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"156984638424","source":"s01","userId":"xfg04"} res:{"code":"E0007","info":"拼团人群限定，不可参与"}
+26-11-19.20:51:24.121 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg05 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"815648450908","source":"s01","userId":"xfg05"}
+26-11-19.20:51:24.123 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xfg05 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg05"}
+26-11-19.20:51:24.129 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg05 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-11-19.20:51:24.130 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg05 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg05"}
+26-11-19.20:51:24.135 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xfg05 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg05"}
+26-11-19.20:51:24.136 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"815648450908","source":"s01","userId":"xfg05"} res:{"code":"E0007","info":"拼团人群限定，不可参与"}
+26-11-19.20:51:24.136 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg06 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"060635170605","source":"s01","userId":"xfg06"}
+26-11-19.20:51:24.138 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xfg06 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg06"}
+26-11-19.20:51:24.143 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg06 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-11-19.20:51:24.143 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg06 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg06"}
+26-11-19.20:51:24.148 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xfg06 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg06"}
+26-11-19.20:51:24.148 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"060635170605","source":"s01","userId":"xfg06"} res:{"code":"E0007","info":"拼团人群限定，不可参与"}
+26-11-19.20:51:24.148 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg07 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"134720318856","source":"s01","userId":"xfg07"}
+26-11-19.20:51:24.150 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xfg07 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg07"}
+26-11-19.20:51:24.155 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg07 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-11-19.20:51:24.155 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg07 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg07"}
+26-11-19.20:51:24.158 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xfg07 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg07"}
+26-11-19.20:51:24.158 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"134720318856","source":"s01","userId":"xfg07"} res:{"code":"E0007","info":"拼团人群限定，不可参与"}
+26-11-19.20:51:24.158 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg08 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"571307095716","source":"s01","userId":"xfg08"}
+26-11-19.20:51:24.160 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xfg08 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg08"}
+26-11-19.20:51:24.166 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg08 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-11-19.20:51:24.167 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg08 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg08"}
+26-11-19.20:51:24.169 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xfg08 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg08"}
+26-11-19.20:51:24.170 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"571307095716","source":"s01","userId":"xfg08"} res:{"code":"E0007","info":"拼团人群限定，不可参与"}
+26-11-19.20:51:24.170 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg09 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"715997571546","source":"s01","userId":"xfg09"}
+26-11-19.20:51:24.173 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xfg09 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg09"}
+26-11-19.20:51:24.182 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg09 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-11-19.20:51:24.183 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg09 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg09"}
+26-11-19.20:51:24.187 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xfg09 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg09"}
+26-11-19.20:51:24.187 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"715997571546","source":"s01","userId":"xfg09"} res:{"code":"E0007","info":"拼团人群限定，不可参与"}
+26-11-19.20:51:24.217 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-11-19.20:51:24.233 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-11-19.20:55:34.877 [main            ] INFO  MarketTradeControllerTest - Starting MarketTradeControllerTest using Java 1.8.0_504 on PC-20260723LJNA with PID 452 (started by Administrator in D:\java\group-buy-market\group-buy-market-cjl\group-buy-market-cjl-app)
+26-11-19.20:55:34.879 [main            ] INFO  MarketTradeControllerTest - The following 1 profile is active: "dev"
+26-11-19.20:55:36.187 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-11-19.20:55:36.191 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-11-19.20:55:36.255 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45 ms. Found 0 Redis repository interfaces.
+26-11-19.20:55:36.947 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [cn.bugstack.config.RedisClientConfig$$EnhancerBySpringCGLIB$$7b27bdc5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-11-19.20:55:37.390 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-cn.bugstack.config.RedisClientConfigProperties' of type [cn.bugstack.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-11-19.20:55:37.773 [main            ] INFO  Version                - Redisson 3.26.0
+26-11-19.20:55:38.129 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-11-19.20:55:38.147 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-11-19.20:55:38.204 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-11-19.20:55:41.713 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-11-19.20:55:41.808 [main            ] INFO  MarketTradeControllerTest - Started MarketTradeControllerTest in 7.671 seconds (JVM running for 8.83)
+26-11-19.20:55:42.248 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg01 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"363815034683","source":"s01","userId":"xfg01"}
+26-11-19.20:55:42.279 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-11-19.20:55:42.512 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-11-19.20:55:42.554 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xfg01 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg01"}
+26-11-19.20:55:42.574 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg01 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-11-19.20:55:42.574 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg01 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg01"}
+26-11-19.20:55:42.583 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xfg01 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg01"}
+26-11-19.20:55:42.587 [main            ] INFO  ActivityUsabilityRuleFilter - 交易规则过滤-活动的可用性校验xfg01 activityId:100123
+26-11-19.20:55:42.592 [main            ] INFO  UserTakeLimitRuleFilter - 交易规则过滤-用户参与次数校验xfg01 activityId:100123
+26-11-19.20:55:42.638 [main            ] INFO  MarketTradeController  - 交易锁单记录(新):xfg01 marketPayOrderEntity:{"deductionPrice":10.00,"orderId":"248108469521","tradeOrderStatusEnumVO":"CREATE"}
+26-11-19.20:55:42.644 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"363815034683","source":"s01","userId":"xfg01"} res:{"code":"0000","data":{"deductionPrice":10.00,"orderId":"248108469521","tradeOrderStatus":0},"info":"成功"}
+26-11-19.20:55:42.644 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg02 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"899182583795","source":"s01","userId":"xfg02"}
+26-11-19.20:55:42.646 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xfg02 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg02"}
+26-11-19.20:55:42.652 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg02 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-11-19.20:55:42.652 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg02 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg02"}
+26-11-19.20:55:42.655 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xfg02 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg02"}
+26-11-19.20:55:42.655 [main            ] INFO  ActivityUsabilityRuleFilter - 交易规则过滤-活动的可用性校验xfg02 activityId:100123
+26-11-19.20:55:42.658 [main            ] INFO  UserTakeLimitRuleFilter - 交易规则过滤-用户参与次数校验xfg02 activityId:100123
+26-11-19.20:55:42.672 [main            ] INFO  MarketTradeController  - 交易锁单记录(新):xfg02 marketPayOrderEntity:{"deductionPrice":10.00,"orderId":"954429370383","tradeOrderStatusEnumVO":"CREATE"}
+26-11-19.20:55:42.674 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"899182583795","source":"s01","userId":"xfg02"} res:{"code":"0000","data":{"deductionPrice":10.00,"orderId":"954429370383","tradeOrderStatus":0},"info":"成功"}
+26-11-19.20:55:42.674 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg03 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"300215522026","source":"s01","userId":"xfg03"}
+26-11-19.20:55:42.676 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xfg03 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg03"}
+26-11-19.20:55:42.683 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg03 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-11-19.20:55:42.683 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg03 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg03"}
+26-11-19.20:55:42.689 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xfg03 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg03"}
+26-11-19.20:55:42.689 [main            ] INFO  ActivityUsabilityRuleFilter - 交易规则过滤-活动的可用性校验xfg03 activityId:100123
+26-11-19.20:55:42.693 [main            ] INFO  UserTakeLimitRuleFilter - 交易规则过滤-用户参与次数校验xfg03 activityId:100123
+26-11-19.20:55:42.707 [main            ] INFO  MarketTradeController  - 交易锁单记录(新):xfg03 marketPayOrderEntity:{"deductionPrice":10.00,"orderId":"786732375211","tradeOrderStatusEnumVO":"CREATE"}
+26-11-19.20:55:42.707 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"300215522026","source":"s01","userId":"xfg03"} res:{"code":"0000","data":{"deductionPrice":10.00,"orderId":"786732375211","tradeOrderStatus":0},"info":"成功"}
+26-11-19.20:55:42.707 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg04 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"478050425388","source":"s01","userId":"xfg04"}
+26-11-19.20:55:42.710 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xfg04 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg04"}
+26-11-19.20:55:42.717 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg04 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-11-19.20:55:42.717 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg04 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg04"}
+26-11-19.20:55:42.721 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xfg04 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg04"}
+26-11-19.20:55:42.722 [main            ] INFO  ActivityUsabilityRuleFilter - 交易规则过滤-活动的可用性校验xfg04 activityId:100123
+26-11-19.20:55:42.725 [main            ] INFO  UserTakeLimitRuleFilter - 交易规则过滤-用户参与次数校验xfg04 activityId:100123
+26-11-19.20:55:42.745 [main            ] INFO  MarketTradeController  - 交易锁单记录(新):xfg04 marketPayOrderEntity:{"deductionPrice":10.00,"orderId":"562334910949","tradeOrderStatusEnumVO":"CREATE"}
+26-11-19.20:55:42.746 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"478050425388","source":"s01","userId":"xfg04"} res:{"code":"0000","data":{"deductionPrice":10.00,"orderId":"562334910949","tradeOrderStatus":0},"info":"成功"}
+26-11-19.20:55:42.746 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg05 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"726857421851","source":"s01","userId":"xfg05"}
+26-11-19.20:55:42.751 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xfg05 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg05"}
+26-11-19.20:55:42.761 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg05 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-11-19.20:55:42.761 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg05 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg05"}
+26-11-19.20:55:42.768 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xfg05 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg05"}
+26-11-19.20:55:42.769 [main            ] INFO  ActivityUsabilityRuleFilter - 交易规则过滤-活动的可用性校验xfg05 activityId:100123
+26-11-19.20:55:42.773 [main            ] INFO  UserTakeLimitRuleFilter - 交易规则过滤-用户参与次数校验xfg05 activityId:100123
+26-11-19.20:55:42.795 [main            ] INFO  MarketTradeController  - 交易锁单记录(新):xfg05 marketPayOrderEntity:{"deductionPrice":10.00,"orderId":"139625543284","tradeOrderStatusEnumVO":"CREATE"}
+26-11-19.20:55:42.795 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"726857421851","source":"s01","userId":"xfg05"} res:{"code":"0000","data":{"deductionPrice":10.00,"orderId":"139625543284","tradeOrderStatus":0},"info":"成功"}
+26-11-19.20:55:42.796 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg06 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"783595214424","source":"s01","userId":"xfg06"}
+26-11-19.20:55:42.799 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xfg06 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg06"}
+26-11-19.20:55:42.807 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg06 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-11-19.20:55:42.807 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg06 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg06"}
+26-11-19.20:55:42.811 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xfg06 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg06"}
+26-11-19.20:55:42.811 [main            ] INFO  ActivityUsabilityRuleFilter - 交易规则过滤-活动的可用性校验xfg06 activityId:100123
+26-11-19.20:55:42.814 [main            ] INFO  UserTakeLimitRuleFilter - 交易规则过滤-用户参与次数校验xfg06 activityId:100123
+26-11-19.20:55:42.836 [main            ] INFO  MarketTradeController  - 交易锁单记录(新):xfg06 marketPayOrderEntity:{"deductionPrice":10.00,"orderId":"511828547692","tradeOrderStatusEnumVO":"CREATE"}
+26-11-19.20:55:42.836 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"783595214424","source":"s01","userId":"xfg06"} res:{"code":"0000","data":{"deductionPrice":10.00,"orderId":"511828547692","tradeOrderStatus":0},"info":"成功"}
+26-11-19.20:55:42.836 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg07 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"638608856728","source":"s01","userId":"xfg07"}
+26-11-19.20:55:42.838 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xfg07 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg07"}
+26-11-19.20:55:42.844 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg07 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-11-19.20:55:42.844 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg07 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg07"}
+26-11-19.20:55:42.846 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xfg07 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg07"}
+26-11-19.20:55:42.846 [main            ] INFO  ActivityUsabilityRuleFilter - 交易规则过滤-活动的可用性校验xfg07 activityId:100123
+26-11-19.20:55:42.847 [main            ] INFO  UserTakeLimitRuleFilter - 交易规则过滤-用户参与次数校验xfg07 activityId:100123
+26-11-19.20:55:42.860 [main            ] INFO  MarketTradeController  - 交易锁单记录(新):xfg07 marketPayOrderEntity:{"deductionPrice":10.00,"orderId":"415161538893","tradeOrderStatusEnumVO":"CREATE"}
+26-11-19.20:55:42.861 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"638608856728","source":"s01","userId":"xfg07"} res:{"code":"0000","data":{"deductionPrice":10.00,"orderId":"415161538893","tradeOrderStatus":0},"info":"成功"}
+26-11-19.20:55:42.861 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg08 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"935818577078","source":"s01","userId":"xfg08"}
+26-11-19.20:55:42.863 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xfg08 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg08"}
+26-11-19.20:55:42.869 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg08 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-11-19.20:55:42.870 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg08 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg08"}
+26-11-19.20:55:42.875 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xfg08 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg08"}
+26-11-19.20:55:42.876 [main            ] INFO  ActivityUsabilityRuleFilter - 交易规则过滤-活动的可用性校验xfg08 activityId:100123
+26-11-19.20:55:42.879 [main            ] INFO  UserTakeLimitRuleFilter - 交易规则过滤-用户参与次数校验xfg08 activityId:100123
+26-11-19.20:55:42.895 [main            ] INFO  MarketTradeController  - 交易锁单记录(新):xfg08 marketPayOrderEntity:{"deductionPrice":10.00,"orderId":"917921157899","tradeOrderStatusEnumVO":"CREATE"}
+26-11-19.20:55:42.896 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"935818577078","source":"s01","userId":"xfg08"} res:{"code":"0000","data":{"deductionPrice":10.00,"orderId":"917921157899","tradeOrderStatus":0},"info":"成功"}
+26-11-19.20:55:42.896 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg09 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"908428133524","source":"s01","userId":"xfg09"}
+26-11-19.20:55:42.898 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xfg09 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg09"}
+26-11-19.20:55:42.904 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg09 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-11-19.20:55:42.904 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg09 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg09"}
+26-11-19.20:55:42.907 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xfg09 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg09"}
+26-11-19.20:55:42.907 [main            ] INFO  ActivityUsabilityRuleFilter - 交易规则过滤-活动的可用性校验xfg09 activityId:100123
+26-11-19.20:55:42.909 [main            ] INFO  UserTakeLimitRuleFilter - 交易规则过滤-用户参与次数校验xfg09 activityId:100123
+26-11-19.20:55:42.919 [main            ] INFO  MarketTradeController  - 交易锁单记录(新):xfg09 marketPayOrderEntity:{"deductionPrice":10.00,"orderId":"014979354851","tradeOrderStatusEnumVO":"CREATE"}
+26-11-19.20:55:42.919 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"908428133524","source":"s01","userId":"xfg09"} res:{"code":"0000","data":{"deductionPrice":10.00,"orderId":"014979354851","tradeOrderStatus":0},"info":"成功"}
+26-11-19.20:55:42.943 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-11-19.20:55:42.960 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+26-11-19.22:07:21.237 [main            ] INFO  MarketTradeControllerTest - Starting MarketTradeControllerTest using Java 1.8.0_504 on PC-20260723LJNA with PID 48208 (started by Administrator in D:\java\group-buy-market\group-buy-market-cjl\group-buy-market-cjl-app)
+26-11-19.22:07:21.240 [main            ] INFO  MarketTradeControllerTest - The following 1 profile is active: "dev"
+26-11-19.22:07:23.072 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-11-19.22:07:23.078 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-11-19.22:07:23.146 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46 ms. Found 0 Redis repository interfaces.
+26-11-19.22:07:23.752 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisClientConfig' of type [cn.bugstack.config.RedisClientConfig$$EnhancerBySpringCGLIB$$e560391b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-11-19.22:07:24.185 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redis.sdk.config-cn.bugstack.config.RedisClientConfigProperties' of type [cn.bugstack.config.RedisClientConfigProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-11-19.22:07:24.485 [main            ] INFO  Version                - Redisson 3.26.0
+26-11-19.22:07:24.842 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-11-19.22:07:24.858 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-11-19.22:07:24.930 [main            ] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redissonClient' of type [org.redisson.Redisson] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+26-11-19.22:07:28.294 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-11-19.22:07:28.360 [main            ] INFO  MarketTradeControllerTest - Started MarketTradeControllerTest in 7.886 seconds (JVM running for 9.939)
+26-11-19.22:07:28.763 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg01 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"534860053321","source":"s01","userId":"xfg01"}
+26-11-19.22:07:28.790 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+26-11-19.22:07:29.045 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+26-11-19.22:07:29.092 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xfg01 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg01"}
+26-11-19.22:07:29.118 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg01 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-11-19.22:07:29.119 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg01 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg01"}
+26-11-19.22:07:29.127 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xfg01 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg01"}
+26-11-19.22:07:29.132 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"534860053321","source":"s01","userId":"xfg01"} res:{"code":"E0007","info":"拼团人群限定，不可参与"}
+26-11-19.22:07:29.132 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg02 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"984669925581","source":"s01","userId":"xfg02"}
+26-11-19.22:07:29.134 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xfg02 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg02"}
+26-11-19.22:07:29.139 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg02 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-11-19.22:07:29.140 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg02 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg02"}
+26-11-19.22:07:29.142 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xfg02 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg02"}
+26-11-19.22:07:29.143 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"984669925581","source":"s01","userId":"xfg02"} res:{"code":"E0007","info":"拼团人群限定，不可参与"}
+26-11-19.22:07:29.143 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg03 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"840223021019","source":"s01","userId":"xfg03"}
+26-11-19.22:07:29.145 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xfg03 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg03"}
+26-11-19.22:07:29.151 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg03 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-11-19.22:07:29.151 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg03 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg03"}
+26-11-19.22:07:29.154 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xfg03 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg03"}
+26-11-19.22:07:29.154 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"840223021019","source":"s01","userId":"xfg03"} res:{"code":"E0007","info":"拼团人群限定，不可参与"}
+26-11-19.22:07:29.155 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg04 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"655244664102","source":"s01","userId":"xfg04"}
+26-11-19.22:07:29.157 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xfg04 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg04"}
+26-11-19.22:07:29.163 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg04 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-11-19.22:07:29.163 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg04 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg04"}
+26-11-19.22:07:29.166 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xfg04 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg04"}
+26-11-19.22:07:29.166 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"655244664102","source":"s01","userId":"xfg04"} res:{"code":"E0007","info":"拼团人群限定，不可参与"}
+26-11-19.22:07:29.166 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg05 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"827660282702","source":"s01","userId":"xfg05"}
+26-11-19.22:07:29.168 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xfg05 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg05"}
+26-11-19.22:07:29.172 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg05 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-11-19.22:07:29.172 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg05 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg05"}
+26-11-19.22:07:29.175 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xfg05 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg05"}
+26-11-19.22:07:29.175 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"827660282702","source":"s01","userId":"xfg05"} res:{"code":"E0007","info":"拼团人群限定，不可参与"}
+26-11-19.22:07:29.175 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg06 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"726924419320","source":"s01","userId":"xfg06"}
+26-11-19.22:07:29.177 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xfg06 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg06"}
+26-11-19.22:07:29.181 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg06 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-11-19.22:07:29.181 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg06 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg06"}
+26-11-19.22:07:29.184 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xfg06 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg06"}
+26-11-19.22:07:29.184 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"726924419320","source":"s01","userId":"xfg06"} res:{"code":"E0007","info":"拼团人群限定，不可参与"}
+26-11-19.22:07:29.184 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg07 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"736787208449","source":"s01","userId":"xfg07"}
+26-11-19.22:07:29.186 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xfg07 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg07"}
+26-11-19.22:07:29.191 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg07 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-11-19.22:07:29.192 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg07 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg07"}
+26-11-19.22:07:29.195 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xfg07 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg07"}
+26-11-19.22:07:29.195 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"736787208449","source":"s01","userId":"xfg07"} res:{"code":"E0007","info":"拼团人群限定，不可参与"}
+26-11-19.22:07:29.195 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg08 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"663535851137","source":"s01","userId":"xfg08"}
+26-11-19.22:07:29.197 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xfg08 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg08"}
+26-11-19.22:07:29.203 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg08 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-11-19.22:07:29.203 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg08 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg08"}
+26-11-19.22:07:29.207 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xfg08 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg08"}
+26-11-19.22:07:29.208 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"663535851137","source":"s01","userId":"xfg08"} res:{"code":"E0007","info":"拼团人群限定，不可参与"}
+26-11-19.22:07:29.208 [main            ] INFO  MarketTradeController  - 营销交易锁单:xfg09 LockMarketPayOrderRequestDTO:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"877073865029","source":"s01","userId":"xfg09"}
+26-11-19.22:07:29.212 [main            ] INFO  RootNode               - 拼团商品查询试算服务-RootNode userId:xfg09 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg09"}
+26-11-19.22:07:29.218 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg09 异步线程加载数据「GroupBuyActivityDiscountVO、SkuVO」完成
+26-11-19.22:07:29.218 [main            ] INFO  MarketNode             - 拼团商品查询试算服务-MarketNode userId:xfg09 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg09"}
+26-11-19.22:07:29.222 [main            ] INFO  EndNode                - 拼团商品查询试算服务-EndNode userId:xfg09 requestParameter:{"activityId":100123,"channel":"c01","goodsId":"9890001","source":"s01","userId":"xfg09"}
+26-11-19.22:07:29.222 [main            ] INFO  MarketTradeControllerTest - 测试结果 req:{"activityId":100123,"channel":"c01","goodsId":"9890001","notifyUrl":"http://127.0.0.1:8091/api/v1/test/group_buy_notify","outTradeNo":"877073865029","source":"s01","userId":"xfg09"} res:{"code":"E0007","info":"拼团人群限定，不可参与"}
+26-11-19.22:07:29.245 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+26-11-19.22:07:29.268 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.

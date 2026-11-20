@@ -37,6 +37,6 @@ public abstract class AbstractDiscountCalculateService implements IDiscountCalcu
 
 
     private boolean filterTagId(String userId, String tagId) {
-        return repository.isTagCrowRange(tagId, userId);
+        return repository.isTagCrowdRange(tagId, userId);
     }
 }
