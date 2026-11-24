@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>小傅哥 - 拼团项目 - 商品详情页</title>
     <link rel="stylesheet" href="css/index.css">
-
 </head>
 <body>
 <!-- 轮播图 -->
@@ -56,12 +55,10 @@
 <script src="js/index.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        // 根据测试诉求，设置基础地址
-        var baseUrl = "http://127.0.0.1:8091";
+        // 根据测试诉求，设置基础地址；部署时，设置为你的公网IP地址，不要使用 127.0.0.1 这样的地址
+        var baseUrl = "http://8.130.37.14";
 
         // 获取信息
-        //
-        //var userId = getCookie("username") || "xfg01";
         var userId = getCookie("username");
         if (!userId) {
             window.location.href = "login.html"; // 跳转到登录页
